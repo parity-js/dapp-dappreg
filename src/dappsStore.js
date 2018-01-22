@@ -467,7 +467,7 @@ export default class DappsStore {
         const commit = api.util.bytesToHex(_commit);
         const bncommit = new BigNumber(commit);
 
-        if (bncommit.eq(0)) {
+        if (bncommit.eq(0) || bncommit.eq(1)) {
           return repo;
         } else {
           return `https://codeload.github.com/${repo}/zip/${commit.substr(2)}`;

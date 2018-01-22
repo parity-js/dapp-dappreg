@@ -62,11 +62,29 @@ export const urlToHash = (api, instance, url) => {
     });
 };
 
+export const registerGHHZip = (instance, url, hash, owner) => {
+  const values = [ hash, url, '0x01' ];
+  const options = {
+    from: owner
+  };
+
+  return instance
+    .hint.estimateGas(options, values)
+    .then((gas) => {
+      options.gas = gas.mul(1.2).toFixed(0);
+      return instance.hint.postTransaction(options, values);
+    });
+};
+
 /**
  * Register the given URL to GithubHint
  * registry contract
  */
-export const registerGHH = (instance, url, hash, owner) => {
+export const registerGHH = (instance, url, hash, owner, isZip = false) => {
+  if (isZip) {
+    return registerGHHZip(instance, url, hash, owner);
+  }
+
   const values = [ hash, url ];
   const options = {
     from: owner
@@ -161,7 +179,7 @@ export const updateDapp = (dappId, dappOwner, updates, dappRegInstance, ghhRegIn
             const { hash, registered } = ghhResult;
 
             if (!registered) {
-              return registerGHH(ghhRegInstance, url, hash, dappOwner)
+              return registerGHH(ghhRegInstance, url, hash, dappOwner, type === 'CONTENT')
                 .then((requestId) => [ { id: requestId, name: `Registering ${url}` }, hash ]);
             }
 
