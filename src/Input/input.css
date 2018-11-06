@@ -18,15 +18,16 @@
 .input {
   position: relative;
 
-  input, select {
+  input,
+  select {
     background: rgba(255, 255, 255, 0.85);
     border: 4px solid rgba(223, 223, 223, 0.85);
     border-radius: 0.25em;
     box-sizing: border-box;
     color: #333;
     font-size: 1em;
-    margin: 0.25em 0 0.25em 0;
-    padding: 0.5em 0.5em 1.5em 0.5em;
+    margin: 0.25em 0;
+    padding: 0.5em 0.5em 1.5em;
     width: 100%;
   }
 
