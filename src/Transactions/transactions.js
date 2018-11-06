@@ -69,15 +69,15 @@ export default class Transactions extends Component {
         <div className={ styles.header }>
           {
             name
-            ? (
-              <div
-                className={ styles.name }
-                title={ name }
-              >
-                { name }
-              </div>
-            )
-            : null
+              ? (
+                <div
+                  className={ styles.name }
+                  title={ name }
+                >
+                  { name }
+                </div>
+              )
+              : null
           }
           <div
             className={ styles.date }

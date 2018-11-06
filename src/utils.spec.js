@@ -19,15 +19,15 @@ import { INVALID_URL_HASH, ZERO_ADDRESS, isContentHash } from './utils';
 describe('dapps/dappreg/utils', () => {
   describe('isContentHash', () => {
     it('returns true on valid hashes', () => {
-      expect(isContentHash(INVALID_URL_HASH)).to.be.true;
+      expect(isContentHash(INVALID_URL_HASH)).toEqual(true);
     });
 
     it('returns false on valid hex, invalid hash', () => {
-      expect(isContentHash(ZERO_ADDRESS)).to.be.false;
+      expect(isContentHash(ZERO_ADDRESS)).toEqual(false);
     });
 
     it('returns false on invalid hex', () => {
-      expect(isContentHash('something')).to.be.false;
+      expect(isContentHash('something')).toEqual(false);
     });
   });
 });
