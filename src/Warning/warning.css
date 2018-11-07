@@ -32,7 +32,7 @@
   max-width: 540px;
   z-index: 100;
 
-  div+div {
+  div + div {
     margin-top: 1.5em;
   }
 }

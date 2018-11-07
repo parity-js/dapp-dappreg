@@ -58,26 +58,26 @@ export default class DappModal extends Component {
       <div>
         {
           showDelete
-          ? (
-            <ModalDelete
-              dappId={ dapp.id }
-              onClose={ this.handleDeleteClose }
-              onDelete={ this.handleDeleteConfirm }
-            />
-          )
-          : null
+            ? (
+              <ModalDelete
+                dappId={ dapp.id }
+                onClose={ this.handleDeleteClose }
+                onDelete={ this.handleDeleteConfirm }
+              />
+            )
+            : null
         }
         {
           showUpdate
-          ? (
-            <ModalUpdate
-              dappId={ dapp.id }
-              onClose={ this.handleUpdateClose }
-              onConfirm={ this.handleUpdateConfirm }
-              updates={ updates }
-            />
-          )
-          : null
+            ? (
+              <ModalUpdate
+                dappId={ dapp.id }
+                onClose={ this.handleUpdateClose }
+                onConfirm={ this.handleUpdateConfirm }
+                updates={ updates }
+              />
+            )
+            : null
         }
 
         <Modal
