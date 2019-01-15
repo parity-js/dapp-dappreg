@@ -119,10 +119,10 @@
     js-sha3 "0.5.5"
     utf8 "^2.1.2"
 
-"@parity/abi@^3.0.23":
-  version "3.0.23"
-  resolved "https://registry.yarnpkg.com/@parity/abi/-/abi-3.0.23.tgz#b7e0b270dc11e5362e692f5a8fce6b9b112a3101"
-  integrity sha512-d8aSgUU13g6q+w9V3nQ2InPy1LvSPSrjlE6LKb6jMk95L0l1HUGDIQtFfdweQhpfBUTH6O0Ac5j/NJWH7llEGQ==
+"@parity/abi@^3.0.26":
+  version "3.0.26"
+  resolved "https://registry.yarnpkg.com/@parity/abi/-/abi-3.0.26.tgz#90442a9fc9f85d1a1fd5caa32f67d056f4ece797"
+  integrity sha512-noVhbW4yFdmgKqCtsE42YY5gT0gI+aC28IdB0IjgsPrGI4M5FDGzFBO4YmDJrhS/dWgjD2Q0oDEe/MbL9C6rQA==
   dependencies:
     bignumber.js "^8.0.1"
     js-sha3 "0.7.0"
@@ -146,12 +146,12 @@
     lodash "^4.17.4"
     store "^2.0.12"
 
-"@parity/api@^3.0.23":
-  version "3.0.23"
-  resolved "https://registry.yarnpkg.com/@parity/api/-/api-3.0.23.tgz#22cb4130dd8b25ec1a0ac5b8f80ab5f1fb53c19f"
-  integrity sha512-QQIGAT2tl76D3G8lO8mrUgQoArCKn21cUFx9rfMLQyD9DXSL5aqPT18jvIFz5AMwDdaLLQxOpz2r6DnjYhD0Hw==
+"@parity/api@^3.0.26":
+  version "3.0.26"
+  resolved "https://registry.yarnpkg.com/@parity/api/-/api-3.0.26.tgz#7a0161ac64d951e86a5ffeced693365bf53bc745"
+  integrity sha512-dgsJ3JhK4i2TftBwBWm2cq5uhpHfaBWnCEnyFKjBjt5315tkiOae/x7T513Bt94gAzIHKdQr3PTE9J40ww/bAA==
   dependencies:
-    "@parity/abi" "^3.0.23"
+    "@parity/abi" "^3.0.26"
     bignumber.js "^8.0.1"
     blockies "0.0.2"
     es6-error "4.0.2"
@@ -4636,12 +4636,7 @@ lodash@^3.6.0:
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
   integrity sha1-W/Rejkm6QYnhfUgnid/RW9FAt7Y=
 
-lodash@^4.13.1, lodash@^4.14.0, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.2.0, lodash@^4.2.1:
-  version "4.17.4"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
-  integrity sha1-eCA6TRwyiuHYbcpkYONptX9AVa4=
-
-lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.4, lodash@^4.17.5:
+lodash@^4.13.1, lodash@^4.14.0, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.0, lodash@^4.2.1:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
